@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F7F2A1FB-5C01-4BF5-94D7-472604764E5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AimHealth.Safari.BulkPosting.Bus.Tests</RootNamespace>
+    <AssemblyName>AimHealth.Safari.BulkPosting.Bus.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.core, Version=2.4.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\thirdparty\tools\nunit\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\thirdparty\tools\nunit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.util, Version=2.4.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\thirdparty\tools\nunit\nunit.util.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks, Version=3.4.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\thirdparty\tools\rhino.mocks\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BulkPaymentTest.cs" />
+    <Compile Include="CreateObjectTest.cs" />
+    <Compile Include="LineOfBusinessTest.cs" />
+    <Compile Include="MapperTest.cs" />
+    <Compile Include="PaymentTestFixture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AimHealth.Safari.BulkPosting.Bus.BatchRepository\AimHealth.Safari.BulkPosting.Bus.BatchRepository.csproj">
+      <Project>{AD3D9D93-7110-40C5-AD2A-98723A9F86DA}</Project>
+      <Name>AimHealth.Safari.BulkPosting.Bus.BatchRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AimHealth.Safari.BulkPosting.Bus\AimHealth.Safari.BulkPosting.Bus.csproj">
+      <Project>{7851DE78-2913-4150-BB82-42BDBDECEC3C}</Project>
+      <Name>AimHealth.Safari.BulkPosting.Bus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AimHealth.Safari.BulkPosting.Data\AimHealth.Safari.BulkPosting.Data.csproj">
+      <Project>{A36780EE-A875-47F7-9A22-E511A0062A0D}</Project>
+      <Name>AimHealth.Safari.BulkPosting.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AimHealth.Safari.BulkPosting.DTO\AimHealth.Safari.BulkPosting.DTO.csproj">
+      <Project>{1FAB3378-A526-459B-B4A2-1837E8E25F7E}</Project>
+      <Name>AimHealth.Safari.BulkPosting.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AimHealth.Safari.BulkPosting.Exceptions\AimHealth.Safari.BulkPosting.Exceptions.csproj">
+      <Project>{760051D2-FC3B-4F28-B10E-127F385005A6}</Project>
+      <Name>AimHealth.Safari.BulkPosting.Exceptions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

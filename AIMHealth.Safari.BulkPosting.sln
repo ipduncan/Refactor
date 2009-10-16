@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aim.Data.ExcelImporter", "AIM.Data.ExcelImporter\Aim.Data.ExcelImporter.csproj", "{50B9D310-1DB1-4D73-B1AB-55304BCE427B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aim.ExcelDocument.Importer.Presentation", "Aim.Excel.Importer.Presentation\Aim.ExcelDocument.Importer.Presentation.csproj", "{066DCA9B-9DDE-4841-AEA3-81CCA788AEFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimHealth.Safari.BulkPosting.Bus", "AimHealth.Safari.BulkPosting.Bus\AimHealth.Safari.BulkPosting.Bus.csproj", "{7851DE78-2913-4150-BB82-42BDBDECEC3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimHealth.Safari.BulkPosting.Bus.Tests", "AimHealth.Safari.BulkPosting.Bus.Tests\AimHealth.Safari.BulkPosting.Bus.Tests.csproj", "{F7F2A1FB-5C01-4BF5-94D7-472604764E5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimHealth.Safari.BulkPosting.Data", "AimHealth.Safari.BulkPosting.Data\AimHealth.Safari.BulkPosting.Data.csproj", "{A36780EE-A875-47F7-9A22-E511A0062A0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimHealth.Safari.BulkPosting.Data.Tests", "AimHealth.Safari.BulkPosting.Data.Tests\AimHealth.Safari.BulkPosting.Data.Tests.csproj", "{D8531D61-3619-4B3A-8188-E2882B61AFAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimHealth.Safari.BulkPosting.DTO", "AimHealth.Safari.BulkPosting.DTO\AimHealth.Safari.BulkPosting.DTO.csproj", "{1FAB3378-A526-459B-B4A2-1837E8E25F7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "thirdparty", "thirdparty", "{4B24EA66-FC8B-4C3B-972F-7B4C72554B2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{60B4BFA8-C304-4F09-9010-B4668201EBFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nunit", "nunit", "{CB0E320C-AB40-4E71-B0D5-CCA5AC1C496F}"
+	ProjectSection(SolutionItems) = preProject
+		thirdparty\tools\nunit\nunit-console-runner.dll = thirdparty\tools\nunit\nunit-console-runner.dll
+		thirdparty\tools\nunit\nunit-console.exe = thirdparty\tools\nunit\nunit-console.exe
+		thirdparty\tools\nunit\nunit-console.exe.config = thirdparty\tools\nunit\nunit-console.exe.config
+		thirdparty\tools\nunit\nunit.core.dll = thirdparty\tools\nunit\nunit.core.dll
+		thirdparty\tools\nunit\nunit.core.interfaces.dll = thirdparty\tools\nunit\nunit.core.interfaces.dll
+		thirdparty\tools\nunit\nunit.framework.dll = thirdparty\tools\nunit\nunit.framework.dll
+		thirdparty\tools\nunit\nunit.util.dll = thirdparty\tools\nunit\nunit.util.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rhino.mocks", "rhino.mocks", "{0C20ECDB-C31A-4A55-9F7C-D22F71814BB0}"
+	ProjectSection(SolutionItems) = preProject
+		thirdparty\tools\rhino.mocks\Rhino.Mocks.dll = thirdparty\tools\rhino.mocks\Rhino.Mocks.dll
+		thirdparty\tools\rhino.mocks\Rhino.Mocks.xml = thirdparty\tools\rhino.mocks\Rhino.Mocks.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimHealth.Safari.BulkPosting.Bus.BatchRepository", "AimHealth.Safari.BulkPosting.Bus.BatchRepository\AimHealth.Safari.BulkPosting.Bus.BatchRepository.csproj", "{AD3D9D93-7110-40C5-AD2A-98723A9F86DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimHealth.Safari.BulkPosting.Exceptions", "AimHealth.Safari.BulkPosting.Exceptions\AimHealth.Safari.BulkPosting.Exceptions.csproj", "{760051D2-FC3B-4F28-B10E-127F385005A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimHealth.Safari.BulkPosting.Bus.BatchRepository.Tests", "AimHealth.Safari.BulkPosting.Bus.BatchRepository.Tests\AimHealth.Safari.BulkPosting.Bus.BatchRepository.Tests.csproj", "{298D790D-25E2-40AE-BF5E-DB98DC32672A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIMHealth.Safari.Logging", "Logging\AIMHealth.Safari.Logging.csproj", "{C55798FA-5A3E-4C31-A7A1-FEBDF0CB26B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50B9D310-1DB1-4D73-B1AB-55304BCE427B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B9D310-1DB1-4D73-B1AB-55304BCE427B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B9D310-1DB1-4D73-B1AB-55304BCE427B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B9D310-1DB1-4D73-B1AB-55304BCE427B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066DCA9B-9DDE-4841-AEA3-81CCA788AEFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066DCA9B-9DDE-4841-AEA3-81CCA788AEFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066DCA9B-9DDE-4841-AEA3-81CCA788AEFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066DCA9B-9DDE-4841-AEA3-81CCA788AEFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7851DE78-2913-4150-BB82-42BDBDECEC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7851DE78-2913-4150-BB82-42BDBDECEC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7851DE78-2913-4150-BB82-42BDBDECEC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7851DE78-2913-4150-BB82-42BDBDECEC3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7F2A1FB-5C01-4BF5-94D7-472604764E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F2A1FB-5C01-4BF5-94D7-472604764E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F2A1FB-5C01-4BF5-94D7-472604764E5F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F2A1FB-5C01-4BF5-94D7-472604764E5F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A36780EE-A875-47F7-9A22-E511A0062A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A36780EE-A875-47F7-9A22-E511A0062A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A36780EE-A875-47F7-9A22-E511A0062A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A36780EE-A875-47F7-9A22-E511A0062A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8531D61-3619-4B3A-8188-E2882B61AFAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8531D61-3619-4B3A-8188-E2882B61AFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8531D61-3619-4B3A-8188-E2882B61AFAE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8531D61-3619-4B3A-8188-E2882B61AFAE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{1FAB3378-A526-459B-B4A2-1837E8E25F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FAB3378-A526-459B-B4A2-1837E8E25F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FAB3378-A526-459B-B4A2-1837E8E25F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FAB3378-A526-459B-B4A2-1837E8E25F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3D9D93-7110-40C5-AD2A-98723A9F86DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3D9D93-7110-40C5-AD2A-98723A9F86DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3D9D93-7110-40C5-AD2A-98723A9F86DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3D9D93-7110-40C5-AD2A-98723A9F86DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{760051D2-FC3B-4F28-B10E-127F385005A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{760051D2-FC3B-4F28-B10E-127F385005A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{760051D2-FC3B-4F28-B10E-127F385005A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{760051D2-FC3B-4F28-B10E-127F385005A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{298D790D-25E2-40AE-BF5E-DB98DC32672A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298D790D-25E2-40AE-BF5E-DB98DC32672A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298D790D-25E2-40AE-BF5E-DB98DC32672A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{298D790D-25E2-40AE-BF5E-DB98DC32672A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C55798FA-5A3E-4C31-A7A1-FEBDF0CB26B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55798FA-5A3E-4C31-A7A1-FEBDF0CB26B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55798FA-5A3E-4C31-A7A1-FEBDF0CB26B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55798FA-5A3E-4C31-A7A1-FEBDF0CB26B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{60B4BFA8-C304-4F09-9010-B4668201EBFD} = {4B24EA66-FC8B-4C3B-972F-7B4C72554B2C}
+		{CB0E320C-AB40-4E71-B0D5-CCA5AC1C496F} = {60B4BFA8-C304-4F09-9010-B4668201EBFD}
+		{0C20ECDB-C31A-4A55-9F7C-D22F71814BB0} = {60B4BFA8-C304-4F09-9010-B4668201EBFD}
+	EndGlobalSection
+EndGlobal

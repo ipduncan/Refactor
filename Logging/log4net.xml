@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<log4net>
+	<appender name="EventLogAppender" type="log4net.Appender.EventLogAppender" >
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+		</layout>
+		<threshold value="WARN" />
+	</appender>
+
+	<appender name="SmtpAppender" type="log4net.Appender.SmtpAppender">
+		<to value="jtemple@aimhealth.com" />
+		<from value="AIMSAFNETDEV@aimhealth.com" />
+		<subject value="Error on AIMSAFNETDEV" />
+		<smtpHost value="AIM-EVS01.aimhealth.com" />
+		<bufferSize value="1" />
+		<threshold value="ERROR" />
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%newline%date [%thread] %-5level %logger [%property{NDC}] - %message%newline%newline%newline" />
+		</layout>
+	</appender>
+
+	<root>
+		<!--<appender-ref ref="EventLogAppender" />-->
+		<appender-ref ref="SmtpAppender" />
+	</root>
+</log4net>
